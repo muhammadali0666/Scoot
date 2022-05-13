@@ -1,0 +1,129 @@
+.services {
+    background-image: url(../img/services.bg.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 250px) calc(50% - 90px);
+
+    .services__inner {
+        padding-top: 160px;
+        padding-bottom: 147px;
+    }
+
+    .services__list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .services__item {
+        max-width: 350px;
+    }
+
+    .services__item+.services__item {
+        margin-left: 30px;
+    }
+
+    .services__img {
+        margin-bottom: 40px;
+        width: 96px;
+        height: 96px;
+    }
+
+    .services__paragraph {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+        margin-bottom: 27px;
+    }
+
+    .services__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .services {
+        background-image: url(../img/bg-service-column.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 220px) calc(50% - 200px);
+        background-size: contain;
+
+        .services__inner {
+            padding-left: 40px;
+        }
+
+        .services__list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .services__item {
+            max-width: 573px;
+            display: flex;
+            align-items: center;
+        }
+
+        .services__item+.services__item {
+            margin-left: 0px;
+            margin-top: 74px;
+        }
+
+        .services__img {
+            margin-right: 79px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .services {
+        background-image: url(../img/bg-service-column.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 520px) calc(50% - 200px);
+        background-size: contain;
+
+        .services__inner {
+            padding-left: 0px;
+            padding-top: 120px;
+            padding-bottom: 83px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        .services__item {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .services__img {
+            width: 56px;
+            height: 56px;
+            margin-right: 0px;
+            margin-bottom: 24px;
+        }
+
+        .services__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .services__paragraph {
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .services__text {
+            text-align: center;
+        }
+    }
+}

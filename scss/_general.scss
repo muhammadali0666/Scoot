@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Space Mono', 'Lexend Deca';
+  margin: 0;
+  padding: 0;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

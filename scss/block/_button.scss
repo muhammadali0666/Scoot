@@ -1,0 +1,18 @@
+.site-header__button {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FCB72B;
+    padding: 14px 39px;
+    border: 3px solid #FCB72B;
+}
+
+.site-header__button :active {
+    color: #FCB72B;
+    background: #FFFFFF;
+    border: 3px solid #FCB72B;
+}

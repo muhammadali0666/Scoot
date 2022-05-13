@@ -1,0 +1,137 @@
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  display: flex;
+
+  .site-header__hamburger {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .site-header__link {
+    background-color: transparent;
+  }
+
+  .site-header__img {
+    width: 107;
+    height: 28px;
+  }
+
+  .site-header__nav {
+    max-width: 950px;
+    width: 100%;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-header__list {
+    margin-left: 58px;
+    display: flex;
+    list-style-type: none;
+    margin-right: auto;
+  }
+
+  .site-header__item+.site-header__item {
+    margin-left: 32px;
+  }
+
+  .site-header__item-link {
+    text-decoration: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+
+  .site-header__item-link:active {
+    color: #FCB72B;
+    cursor: pointer;
+  }
+
+  .site-header__button {
+    margin-left: auto;
+  }
+
+  .site-header__button:hover {
+    background-color: transparent;
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .site-header {
+    position: relative;
+
+    .site-header__nav {
+      display: none;
+    }
+
+    .site-header__hamburger {
+      display: block;
+      background-color: transparent;
+      border: none;
+    }
+
+    .site-header__link {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .site-header__list {
+      margin-left: 0px;
+      margin-bottom: 339px;
+    }
+
+    .site-header--open .site-header__list {
+      flex-direction: column;
+    }
+
+    .site-header--open .site-header__nav {
+      display: block;
+      position: absolute;
+      top: 100%;
+      background-color: #333A44;
+      width: 70%;
+      min-height: 700px;
+      left: 0;
+      padding-top: 64px;
+      padding-left: 32px;
+      padding-bottom: 24px;
+    }
+
+    .site-header--open .site-header__hamburger {
+      background-image: url(../img/exit.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+    }
+
+    .site-header--open .site-header__item-link {
+      color: #E5ECF4;
+    }
+
+    .site-header__hamburger.site-header__button {
+      position: absolute;
+      top: 100%;
+    }
+
+    .site-header__item+.site-header__item {
+      margin-left: 0px;
+      margin-top: 24px;
+    }
+  }
+
+}
